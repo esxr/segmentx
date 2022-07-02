@@ -62,34 +62,3 @@ const GetInTouchOption = () => {
 }
 
 export default TopBar
-
-// import React from 'react'
-// import { GetInTouch } from '../GetInTouch'
-// import { Logo } from '../components/Logo'
-// import { OverviewOption } from '../components/OverviewOption'
-// import { ClientOption } from '../components/ClientOption'
-// import { ProcessOption } from '../components/ProcessOption'
-// import { GetInTouchOption } from '../components/GetInTouchOption'
-// import styles from '../styles/Home.module.css'
-// 
-// export const TopBar = () => {
-//   return (
-//     <div className={styles.topBar}>
-//       <div className={styles.left}>
-//         <Logo />
-//         <OverviewOption />
-//         <ClientOption />
-//         <ProcessOption />
-//       </div>
-//       <div className={styles.right}>
-//         <GetInTouchOption />
-//       </div>
-//     </div>
-//   )
-// }
-// 
-// export default TopBar
-// 
-// // import React from 'react'
-// // import { GetInTouch } from '../GetInTouch'
-// // import { Logo } from '../components/Logo'
