@@ -1,4 +1,3 @@
-import { Main } from 'next/document'
 import Head from 'next/head'
 import Image from 'next/image'
 import { BusinessModelGenerator } from '../components/BusinessModelGenerator'
@@ -15,8 +14,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Tailored Software That Exceeds Expectations</title>
-        <meta name="description" content="We take on your most complex challenges and deliver software that is reliable, scalable and easy to use. We work with you to understand your unique business needs and then craft custom solutions that give you a competitive edge." />
+        <title>SegmentX</title>
+        <meta name="description" content="Tailored Software That Exceeds Expectations" />
         {/* SEO Optimization */}
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
@@ -41,7 +40,7 @@ export default function Home() {
         <meta name="theme-color" content="#ffffff" />
         <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
       </Head>
-      <Main>
+      <main>
         <TopBar />
         <Landing />
         <Description />
@@ -50,7 +49,7 @@ export default function Home() {
         <Services />
         <GetInTouch />
         <Footer />
-      </Main>
+      </main>
     </>
   )
 }
