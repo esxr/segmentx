@@ -56,7 +56,7 @@ const ProcessOption = () => {
 const GetInTouchOption = () => {
   return (
     <div>
-      <GetInTouch />
+      GetInTouch
     </div>
   )
 }

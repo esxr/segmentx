@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export const Services = () => {
   return (
@@ -43,10 +44,9 @@ const ServicesIllustrations = () => {
 const WebDevService = () => {
   return (
     <div>
-      <h2>Web Development</h2>
-      <p>
-        We build websites that are user-friendly and easy to use. We use the latest technologies to create a website that is responsive and works on all devices.
-      </p>
+      {/* import serviceWebDev.svg from public folder */}
+      <Image src="/webDevIllustration.svg" alt="web development" width="279px" height="200px" />
+      <p>Web Development</p>
     </div>
   )
 }
@@ -54,10 +54,8 @@ const WebDevService = () => {
 const MobileDevService = () => {
   return (
     <div>
-      <h2>Mobile Development</h2>
-      <p>
-        We build mobile apps that are user-friendly and easy to use. We use the latest technologies to create a mobile app that is responsive and works on all devices.
-      </p>
+      <Image src="/mobileDevIllustration.svg" alt="mobile development" width="241px" height="200px" />
+      <p>Mobile Development</p>
     </div>
   )
 }
@@ -65,10 +63,8 @@ const MobileDevService = () => {
 const Maintenance = () => {
   return (
     <div>
-      <h2>Maintenance</h2>
-      <p>
-        We provide maintenance services for our clients. We use the latest technologies to create a website that is responsive and works on all devices.
-      </p>
+      <Image src="/maintenanceIllustration.svg" alt="maintenance" width="260px" height="200px" />
+      <p>Maintenance</p>
     </div>
   )
 }

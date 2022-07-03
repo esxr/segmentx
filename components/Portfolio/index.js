@@ -1,10 +1,11 @@
 import React from 'react'
+import Image from 'next/image'
 
 export const Portfolio = () => {
   return (
     <div>
-      <PortfolioHeading/>
-      <ClientLogos/>
+      <PortfolioHeading />
+      <ClientLogos />
     </div>
   )
 }
@@ -13,7 +14,7 @@ export const Portfolio = () => {
 const PortfolioHeading = () => {
   return (
     <div>
-      <h1>Portfolio</h1>
+      Meet our Clients
     </div>
   )
 }
@@ -21,8 +22,7 @@ const PortfolioHeading = () => {
 const ClientLogos = () => {
   return (
     <div>
-      <p>
-      We take on your most complex challenges and deliver software that is reliable, scalable and easy to use. We work with you to understand your unique business needs and then craft custom solutions that give you a competitive edge.</p>
+      <Image src="/portfolio.svg" width="905px" height="55px" />
     </div>
   )
 }
