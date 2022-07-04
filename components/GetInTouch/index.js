@@ -3,25 +3,25 @@ import styles from './GetInTouch.module.scss'
 
 export const GetInTouch = () => {
   return (
-    <div>
-      <GetInTouchHeading />
-      <GetInTouchCTA />
+    <div className={styles.getInTouch}>
+      <GetInTouchHeading className={styles.heading} />
+      <GetInTouchCTA className={styles.cta} />
     </div>
   )
 }
 
 // define all options as react components
-const GetInTouchHeading = () => {
+const GetInTouchHeading = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <h1>Get In Touch</h1>
     </div>
   )
 }
 
-const GetInTouchCTA = () => {
+const GetInTouchCTA = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <p>
         If you have any questions, please contact us at
         &nbsp;<a href="mailto:">info@segmentx.com</a>

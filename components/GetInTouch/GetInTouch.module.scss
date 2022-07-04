@@ -1,4 +1,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {}
+@layer components {
+    .getInTouch {
+        @apply p-8 tablet:px-32 py-16;
+        @apply bg-white text-black;
+        @apply text-center;
+    }
+
+    .heading {
+        // center
+        @apply text-center;
+        @apply text-xl;
+        @apply pb-8;
+    }
+}
