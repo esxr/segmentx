@@ -4,7 +4,7 @@
 @layer components {
     .landing {
         @apply flex;
-        @apply p-8 tablet:p-32;
+        @apply px-8 py-16 tablet:p-32;
         @apply bg-black text-white;
     }
 
