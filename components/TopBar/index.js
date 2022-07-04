@@ -4,6 +4,8 @@ import { GetInTouch } from '../GetInTouch'
 import styles from './TopBar.module.scss'
 
 export const TopBar = () => {
+  const [state, setState] = React.useState(false);
+
   return (
     // make a responsive toolbar
     // Logo, Overview, Clients, Process on the Left
@@ -14,16 +16,19 @@ export const TopBar = () => {
     // padding: 8px
     // use TailwindCSS to make it responsive
     <div className={styles.topbar}>
-      <div className={styles.left}>
-        <HamburgerMenu className={styles.hamburger}/>
-        <Logo />
-        <div className={styles.options}>
-          <Option option="Overview" className={styles.option} />
-          <Option option="Our Clients" className={styles.option} />
-          <Option option="Our Process" className={styles.option} />
+      <div className={styles.upper}>
+        <div className={styles.left}>
+          <HamburgerMenu className={styles.hamburger} state={state} setState={setState} />
+          <Logo />
+          <div className={styles.options}>
+            <Option option="Overview" className={styles.option} />
+            <Option option="Our Clients" className={styles.option} />
+            <Option option="Our Process" className={styles.option} />
+          </div>
         </div>
+        <GetInTouchOption className={styles.getInTouchOption} />
       </div>
-      <GetInTouchOption className={styles.getInTouchOption} />
+      <MobileOptions className={styles.mobileOptions} state={state} />
     </div>
   )
 }
@@ -37,11 +42,11 @@ const Logo = () => {
   )
 }
 
-const HamburgerMenu = ({ className }) => {
+const HamburgerMenu = ({ className, state, setState }) => {
   return (
-    <>
-      <img src="/hamburger.svg" alt="hamburger" className={className} />
-    </>
+    <div className={className} onClick={() => { setState(!state) }}>
+      <img src="/hamburger.svg" alt="hamburger" />
+    </div>
   )
 }
 
@@ -59,5 +64,15 @@ const Option = ({ option, className }) => (
     {option}
   </div>
 )
+
+const MobileOptions = ({ className, state }) => {
+  return (
+    state ? <div className={className}>
+      <Option option="Overview" className={styles.mobileoption} />
+      <Option option="Our Clients" className={styles.mobileoption} />
+      <Option option="Our Process" className={styles.mobileoption} />
+    </div> : <></>
+  )
+}
 
 export default TopBar

@@ -3,9 +3,10 @@
 
 @layer components {
     .topbar {
-        // colors
         @apply text-white bg-black;
+    }
 
+    .upper {
         // spacing
         @apply flex items-center justify-between px-32 py-4;
         @apply sm:px-4 mobile:px-4 tablet:px-16 laptop:px-32;
@@ -20,6 +21,27 @@
     .hamburger {
         @apply mobile:block tablet:hidden laptop:hidden;
         @apply mr-4;
+    }
+
+    .mobileoptions {
+        @apply bg-white text-black;
+        @apply mobile:block tablet:hidden laptop:hidden;
+    }
+
+    .mobileoptionNormal {
+        @apply bg-white text-black;
+        // center the text
+        @apply flex flex-col items-center justify-center;
+        // spacing
+        @apply px-4 py-2;
+    }
+
+    .mobileoptionHover {
+        @apply bg-black text-white;
+    }
+
+    .mobileoption {
+        @apply mobileoptionNormal hover:mobileoptionHover;
     }
 
     .options {
