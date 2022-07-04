@@ -15,6 +15,7 @@ export const TopBar = () => {
     // use TailwindCSS to make it responsive
     <div className={styles.topbar}>
       <div className={styles.left}>
+        <HamburgerMenu className={styles.hamburger}/>
         <Logo />
         <div className={styles.options}>
           <Option option="Overview" className={styles.option} />
@@ -22,7 +23,7 @@ export const TopBar = () => {
           <Option option="Our Process" className={styles.option} />
         </div>
       </div>
-      <GetInTouchOption className={styles.getInTouchOption}/>
+      <GetInTouchOption className={styles.getInTouchOption} />
     </div>
   )
 }
@@ -33,6 +34,14 @@ const Logo = () => {
     <div>
       <img src="/logo.svg" alt="logo" />
     </div>
+  )
+}
+
+const HamburgerMenu = ({ className }) => {
+  return (
+    <>
+      <img src="/hamburger.svg" alt="hamburger" className={className} />
+    </>
   )
 }
 

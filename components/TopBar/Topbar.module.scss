@@ -8,6 +8,7 @@
 
         // spacing
         @apply flex items-center justify-between px-32 py-4;
+        @apply sm:px-4 mobile:px-4 tablet:px-16 laptop:px-32;
 
         // responsive
     }
@@ -16,10 +17,16 @@
         @apply flex flex-grow;
     }
 
+    .hamburger {
+        @apply mobile:block tablet:hidden laptop:hidden;
+        @apply mr-4;
+    }
+
     .options {
-        @apply flex items-center;
+        @apply items-center;
         // padding to children
         @apply ml-8;
+        @apply sm:hidden mobile:hidden tablet:flex laptop:flex;
     }
 
     .optionNormal {
