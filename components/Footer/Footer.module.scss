@@ -1,4 +1,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {}
+@layer components {
+    .footer {
+        @apply bg-black text-white;
+        @apply p-4 tablet:px-16 py-8;
+        @apply text-center;
+    }
+
+    .upper {
+        @apply text-white;
+    }
+
+    .lower {
+        @apply text-gray;
+    }
+}

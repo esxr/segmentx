@@ -3,7 +3,7 @@
 
 @layer components {
     .portfolio {
-        @apply p-8 tablet:p-32;
+        @apply p-8 tablet:px-32 py-16;
         @apply bg-white text-black;
         @apply text-center;
     }

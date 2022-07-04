@@ -3,29 +3,29 @@ import styles from './Footer.module.scss'
 
 export const Footer = () => {
   return (
-    <div>
-      <UpperFooter />
-      <LowerFooter />
+    <div className={styles.footer}>
+      <UpperFooter className={styles.upper}/>
+      <LowerFooter className={styles.lower}/>
     </div>
   )
 }
 
 // define all options as react components
-const UpperFooter = () => {
+const UpperFooter = ({ className }) => {
   return (
-    <>
+    <div className={className}>
       <Logo />
       <LogoTagline />
-    </>
+    </div>
   )
 }
 
-const LowerFooter = () => {
+const LowerFooter = ({ className }) => {
   return (
-    <>
+    <div className={className}>
       <Copyright />
       <TermsAndConditions />
-    </>
+    </div>
   )
 }
 
@@ -34,7 +34,7 @@ const Logo = () => {
   return (
     <div>
       <a href="#">
-        <img src="https://segmentx.com/static/images/logo.png" alt="SegmentX Logo" />
+        <img src="/logo.svg" alt="SegmentX Logo" />
       </a>
     </div>
   )

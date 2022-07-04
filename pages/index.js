@@ -46,8 +46,8 @@ export default function Home() {
         <Portfolio />
         {/* <BusinessModelGenerator /> */}
         <Services />
-        {/* <GetInTouch />
-        <Footer /> */}
+        <GetInTouch />
+        <Footer />
       </main>
     </>
   )
