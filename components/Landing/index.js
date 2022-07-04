@@ -19,9 +19,7 @@ const Overview = ({ className }) => {
     <div className={className}>
       <h1 className={styles.heading}>Tailored Software That Exceeds Expectations</h1>
       <p className={styles.content}>
-        We take on your most complex challenges and deliver software that is reliable, scalable and easy to use.
-        <br /><br />
-        We work with you to understand your unique business needs and then craft custom solutions that give you a competitive edge.</p>
+        We take on your most complex challenges and deliver software that is reliable, scalable and easy to use.</p>
 
       {/* CTA */}
       <div className={styles.cta}>

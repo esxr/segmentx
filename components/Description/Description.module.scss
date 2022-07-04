@@ -1,4 +1,23 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {}
+@layer components {
+    .description {
+        @apply laptop:flex;
+        @apply p-8 tablet:p-32;
+        @apply bg-white text-black;
+    }
+
+    .heading {
+        @apply text-5xl font-medium leading-tight;
+        @apply pb-4 laptop:pb-0;
+        @apply laptop:w-3/5;
+    }
+
+    .para {
+        @apply text-gray;
+        @apply pt-4 laptop:pt-0;
+        @apply laptop:w-3/5;
+    }
+
+}

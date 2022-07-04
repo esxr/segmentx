@@ -68,16 +68,16 @@
 
     .getInTouchBtn {
         @apply cursor-pointer;
+        @apply text-gray;
         // spacing
         @apply mr-2 ml-2;
         @apply p-4;
         @apply text-xs;
-        @apply border-2 border-gray rounded-full;
+        @apply rounded-full;
     }
 
     .getInTouchBtnHover {
-        @apply text-white;
-        @apply border-white;
+        @apply text-white border-white;
     }
 
     .getInTouchOption {

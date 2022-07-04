@@ -8,7 +8,6 @@ import { Landing } from '../components/Landing'
 import { Portfolio } from '../components/Portfolio'
 import { Services } from '../components/Services'
 import { TopBar } from '../components/TopBar'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -43,8 +42,8 @@ export default function Home() {
       <main>
         <TopBar />
         <Landing />
-        {/* <Description />
-        <Portfolio />
+        <Description />
+        {/* <Portfolio />
         <BusinessModelGenerator />
         <Services />
         <GetInTouch />

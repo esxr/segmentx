@@ -15,12 +15,12 @@
 
     .heading {
         @apply text-5xl font-medium leading-tight;
-        @apply pb-4;
+        @apply pt-4;
         @apply laptop:w-3/5;
     }
 
     .content {
-        @apply py-4;
+        @apply pb-4;
         @apply text-gray;
         @apply laptop:w-3/5;
     }
@@ -28,7 +28,7 @@
     .ctaNormal {
         @apply cursor-default;
         @apply bg-blue text-white;
-        @apply p-4 mt-8;
+        @apply p-4 mt-16;
         @apply rounded-full;
         @apply text-center;
         @apply tablet:w-1/2;
