@@ -1,0 +1,58 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .topbar {
+        // colors
+        @apply text-white bg-black;
+
+        // spacing
+        @apply flex items-center justify-between px-32 py-4;
+
+        // responsive
+    }
+
+    .left {
+        @apply flex flex-grow;
+    }
+
+    .options {
+        @apply flex items-center;
+        // padding to children
+        @apply ml-8;
+    }
+
+    .optionNormal {
+        @apply cursor-pointer;
+        @apply mr-2 ml-2;
+        @apply text-gray;
+        @apply text-sm;
+    }
+
+    .optionHover {
+        @apply text-white;
+    }
+
+    .option {
+        @apply optionNormal hover:optionHover;
+    }
+
+    .getInTouchBtn {
+        @apply cursor-pointer;
+        // spacing
+        @apply mr-2 ml-2;
+        @apply p-4;
+        @apply text-xs;
+        @apply border-2 border-gray rounded-full;
+    }
+
+    .getInTouchBtnHover {
+        @apply text-white;
+        @apply border-white;
+    }
+
+    .getInTouchOption {
+        // make a rounded button
+        @apply getInTouchBtn hover:getInTouchBtnHover;
+    }
+} ;
