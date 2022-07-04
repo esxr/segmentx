@@ -4,28 +4,30 @@ import styles from './Landing.module.scss'
 
 export const Landing = () => {
   return (
-    <div>
+    <div className={styles.landing}>
       {/* Left Side */}
-      <Overview />
+      <Overview className={styles.overview} />
       {/* Right Side */}
-      <Illustration />
+      <Illustration className={styles.illustration} />
     </div>
   )
 }
 
 // define all options as react components
-const Overview = () => {
+const Overview = ({ className }) => {
   return (
-    <div>
-      <h1>Tailored Software That Exceeds Expectations</h1>
-      <p>
-        We take on your most complex challenges and deliver software that is reliable, scalable and easy to use. We work with you to understand your unique business needs and then craft custom solutions that give you a competitive edge.</p>
+    <div className={className}>
+      <h1 className={styles.heading}>Tailored Software That Exceeds Expectations</h1>
+      <p className={styles.content}>
+        We take on your most complex challenges and deliver software that is reliable, scalable and easy to use. 
+        <br/><br/>
+        We work with you to understand your unique business needs and then craft custom solutions that give you a competitive edge.</p>
 
       {/* CTA */}
-      <div className="cta">
+      <div className={styles.cta}>
         <a href="#">
           <button className="btn">
-            <span>Get In Touch</span>
+            <span>Get In Touch →</span>
           </button>
         </a>
       </div>
@@ -33,11 +35,11 @@ const Overview = () => {
   )
 }
 
-const Illustration = () => {
+const Illustration = ({ className }) => {
   return (
-    <>
+    <div className={className}>
       <Image src="/landingIllustration.svg" width="521px" height="300px" />
-    </>
+    </div>
   )
 }
 

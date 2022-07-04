@@ -43,12 +43,12 @@ export default function Home() {
       <main>
         <TopBar />
         <Landing />
-        <Description />
+        {/* <Description />
         <Portfolio />
         <BusinessModelGenerator />
         <Services />
         <GetInTouch />
-        <Footer />
+        <Footer /> */}
       </main>
     </>
   )

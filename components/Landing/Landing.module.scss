@@ -1,4 +1,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {}
+@layer components {
+    .landing {
+        @apply flex;
+        @apply p-32;
+        @apply bg-black text-white;
+    }
+
+    .overview {
+        @apply mr-4 w-1/2 laptop:w-2/5;
+        @apply block flex-grow;
+    }
+
+    .heading {
+        @apply text-5xl font-medium leading-tight;
+        @apply pb-4;
+        @apply laptop:w-3/5;
+    }
+
+    .content {
+        @apply py-4;
+        @apply text-gray;
+        @apply laptop:w-3/5;
+    }
+
+    .ctaNormal {
+        @apply bg-blue text-white;
+        @apply p-4 mt-8;
+        @apply rounded-full;
+        @apply text-center;
+        @apply w-1/2;
+    }
+
+    .ctaHover {
+        @apply bg-white text-black;
+    }
+
+    .cta {
+        @apply ctaNormal hover:ctaHover;
+    }
+
+    .illustration {
+        // stick to right
+        @apply my-auto;
+        @apply mr-0;
+        @apply w-1/2 laptop:w-2/5;
+        @apply ml-4;
+        @apply sm:hidden tablet:hidden laptop:block;
+    }
+}
