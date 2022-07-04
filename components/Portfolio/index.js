@@ -4,25 +4,25 @@ import styles from './Portfolio.module.scss'
 
 export const Portfolio = () => {
   return (
-    <div>
-      <PortfolioHeading />
-      <ClientLogos />
+    <div className={styles.portfolio}>
+      <PortfolioHeading className={styles.heading}/>
+      <ClientLogos className={styles.logos}/>
     </div>
   )
 }
 
 // define all options as react components
-const PortfolioHeading = () => {
+const PortfolioHeading = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       Meet our Clients
     </div>
   )
 }
 
-const ClientLogos = () => {
+const ClientLogos = ({ className }) => {
   return (
-    <div>
+    <div className={className}>
       <Image src="/portfolio.svg" width="905px" height="55px" />
     </div>
   )

@@ -1,4 +1,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {}
+@layer components {
+    .portfolio {
+        @apply p-8 tablet:p-32;
+        @apply bg-white text-black;
+        @apply text-center;
+    }
+
+    .heading {
+        // center
+        @apply text-center;
+        @apply text-xl;
+        @apply pb-8;
+    }
+
+    .logos {}
+}
