@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import style from './BMG.module.scss'
 
 export const BusinessModelGenerator = () => {
   return (

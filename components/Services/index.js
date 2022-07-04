@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import styles from './Services.module.scss'
 
 export const Services = () => {
   return (

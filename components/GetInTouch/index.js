@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './GetInTouch.module.scss'
 
 export const GetInTouch = () => {
   return (

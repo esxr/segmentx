@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import styles from './Landing.module.scss'
 
 export const Landing = () => {
   return (

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import styles from './Portfolio.module.scss'
 
 export const Portfolio = () => {
   return (
