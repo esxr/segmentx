@@ -4,7 +4,7 @@
 @layer components {
     .landing {
         @apply flex;
-        @apply p-32;
+        @apply p-8 tablet:p-32;
         @apply bg-black text-white;
     }
 
@@ -26,11 +26,12 @@
     }
 
     .ctaNormal {
+        @apply cursor-default;
         @apply bg-blue text-white;
         @apply p-4 mt-8;
         @apply rounded-full;
         @apply text-center;
-        @apply w-1/2;
+        @apply tablet:w-1/2;
     }
 
     .ctaHover {
