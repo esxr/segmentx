@@ -29,6 +29,11 @@ export function reportWebVitals(metric) {
   }
 }
 
+// Send metrics to a third party service for recording
+const sendMetric = ({name, value}) => {
+  return
+}
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
