@@ -1,7 +1,7 @@
 import React from 'react'
 import { GetInTouch } from '../GetInTouch'
 // import topbar scss
-import styles from './topbar.module.scss'
+import styles from './Topbar.module.scss'
 
 export const TopBar = () => {
   const [state, setState] = React.useState(false);
